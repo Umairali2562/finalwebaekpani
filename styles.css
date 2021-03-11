@@ -1,0 +1,407 @@
+/*##################### defaults ##########################*/
+nav,
+header,
+footer{
+    display:block;
+}
+
+body{
+    line-height: 1;
+    margin: 0;
+
+}
+
+label{
+    font-size: 35px;
+    font-weight: bold;
+}
+p{
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+article p{
+font-size: 35px;
+    padding: 20px;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /*wrap all content in this container around underneeth*/
+    align-items:center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content:"";
+}
+/*my grid system */
+.col-1 {width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+*{
+    box-sizing: border-box;
+}
+
+
+h1.large{
+    color: #eeeeee;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+
+h1.section2Header{
+    text-align:center;
+    font-size:65px;
+
+}
+
+
+form h2{
+    color:#FFF;
+}
+input[type="text"]{
+font-size: 20px;
+    width: 480px;
+    min-width: 100px;
+    padding: 5px;
+}
+
+
+
+
+/*##################### Navbar ##########################*/
+
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color:#eee;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+}
+ul.topnav li{
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+
+    float: right;
+}
+
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color:#666;
+}
+
+ul.topnav li a:hover{
+    background-color: #0000ff;
+    color:white;
+}
+
+ul.topnav li.dropdownIcon{
+    display: none;
+}
+
+
+/*##################### custom styles ##########################*/
+
+#section-1-gradient{
+    background: #076DFF;
+    background:-webkit-linear-gradient(#076DFF,#65a5ff);
+    background:-o-linear-gradient(#076DFF,#65a5ff);
+    background:-moz-linear-gradient(#076DFF,#65a5ff);
+
+    background:linear-gradient(#076DFF,#65a5ff);
+}
+
+div.box{
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+    0 2px 3px 0 rgba(0,0,0,.1);
+}
+div.myimage{
+    padding-left: 10px;
+}
+
+div.myimage img{
+    display: block;
+    margin: auto;
+    width: 100%;
+
+    box-shadow: -2px -2px 10px 2px rgba(0,0,0,.15),
+    2px 2px 17px 2px rgba(0,0,0,.1);
+}
+
+button{
+    font-size: 32px;
+    font-weight: bolder;
+    color:#fff;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+button.learnmore{
+    display: block;
+    margin: auto;
+}
+
+div.icon{
+    width: 100%;
+}
+.leftside-col{
+    margin-left: 30%;
+}
+
+.rightside-col{
+    margin-left: 15%;
+}
+
+
+footer.footsy{
+  background-color: #1c007a;
+    padding-left: 10%;
+
+}
+
+footer.footsy h1{
+    color: #fff;
+    font-size:35px;
+}
+footer.footsy ul{
+   list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+footer.footsy ul li{
+  color:#fff;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+
+/*##################### Footer ##########################*/
+.footer{
+    width: 100%;
+    background: #00121b;
+    display: block;
+
+}
+
+.inner-footer{
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.footer-items{
+    width:25%;
+    padding: 10px 25px;
+    box-sizing: border-box;
+}
+
+
+
+ .footer-items h1{
+    padding:10px 0;
+    font-size:25px;
+    color:#fff;
+    text-transform:uppercase;
+
+}
+.footer-items p{
+    color:grey;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+}
+.footer-items h2{
+    color:grey;
+    margin: 10px 0;
+    font-size:16px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.border{
+    height: 2px;
+    width: 40px;
+    background: darkorange;
+}
+
+ul{
+    list-style: none;
+    color:#fff;
+    font-size:15px;
+    letter-spacing: 0.5px;
+}
+
+ul a{
+    text-decoration: none;
+    outline: none;
+    color:white;
+    transition: 0.3s;
+}
+
+ul a:hover{
+    color:#ff9800;
+}
+
+ul li{
+    margin-right:20px;
+    padding: 5px;
+}
+
+.social-media{
+    width:100%;
+    color:#fff;
+    text-align: center;
+}
+.social-media a{
+    text-decoration: none;
+}
+
+.social-media i{
+
+    margin:20px 5px;
+    padding:10px;
+    color:white;
+    border-radius: 50%;
+    border:1px solid grey;
+    transition:0.3s;
+}
+
+.social-media i:hover{
+    background: grey;
+}
+
+.footer-bottom{
+    padding:10px;
+    background: #3d545f;
+    color:white;
+    font-size:12px;
+}
+
+.col-3.footer-items.quciklinksforstyle {
+    margin-bottom: 44px;
+}
+/*##################### Mobile ##########################*/
+
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+
+    ul.topnav li.dropdownIcon{
+        display: block;
+        float:right;
+    }
+
+    ul.topnav li.dropdownIcon{
+       position: absolute;
+        top:0;
+        right:0;
+    }
+    ul.topnav.responsive{
+        possition:relative;
+    }
+    ul.topnav.responsive li{
+        display: inline;
+        float:none;
+    }
+    ul.topnav.responsive li a{
+       display: block;
+        text-align: center;
+    }
+
+    h1.section2Header{
+        font-size:55px;
+    }
+    article p{
+        font-size:25px;
+    }
+
+    .col-7,
+    .col-6,
+    .col-5,
+    .col-4{
+        width: 100%;
+        margin: 0;
+    }
+
+    div.mobilestack{
+        width: 50%;
+        display: block;
+    }
+
+       div.box {
+         padding: 5px;
+        display: block;
+    }
+
+    div.myimage {
+        margin: 10px;
+    }
+       div.myimage img{
+           width: 100%;
+
+       }
+
+    div.leftside-col,
+    div.rightside-col{
+        margin: 15px;
+    }
+
+    input[type="text"]{
+    width: 350px;
+    }
+
+    .videocontainer iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+}
