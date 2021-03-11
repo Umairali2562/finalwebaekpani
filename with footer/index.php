@@ -10,25 +10,47 @@
     <title>Aekpani-Networks</title>
 </head>
 <body>
-<div class="banner">
-
-
 <nav>
     <ul class="topnav" id="DropdownClick">
         <li><a href="#home">Home</a></li>
 
-        <li class="topnav-right"><a href="#ContactUs">Contact Us</a></li>
-        <li class="topnav-right"><a href="#AboutUS">About US</a></li>
-        <li class="topnav-right"><a href="#Parking">Parking</a></li>
+        <li class="topnav-right"><a href="#home">About US</a></li>
+        <li class="topnav-right"><a href="#home">FAQ</a></li>
+        <li class="topnav-right"><a href="#home">Contact US</a></li>
 
         <li class="dropdownIcon" onclick="dropdownMenu();"><a href="javascript:void(0);">&#9776;</a></li>
     </ul>
 </nav>
 
+
+<div class="container" id="section-1-gradient">
+<div class="row">
+    <div class="col-6">
+        <div class="leftside-col">
+             <h1 class="large">This is a heading</h1>
+             <h1 class="large">but will become professional</h1>
+        </div>
+        <form>
+            <div class="leftside-col">
+                <h2>Username:</h2>
+                <input class="inputbox" type="text" placeholder="Username">
+                <h2>Password:</h2>
+                <input class="inputbox" type="text" placeholder="Password">
+            </div>
+        </form>
+
+    </div>
+
+    <div class="col-6">
+        <div class="rightside-col">
+           <div class="videocontainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AmHEfTSBXiY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+           </div>
+        </div>
+    </div>
 </div>
-
-
-
+</div>
 
 <header>
 <h1 class="section2Header"> TYPES OF PARKING</h1>
@@ -81,28 +103,9 @@
 
     </div>
 
-
-    </div>
     <hr>
-
-    <header>
-        <h1 class="section2Header"> About US</h1>
-    </header>
-
-
-
-
     <div class="container">
         <div class="row">
-
-            <div class="col-7">
-                <article>
-                    <p>Best Airport parking prices at all Major UK Airports.
-                        including Heathrow, Gatwick, Luton, Stansted, Birmingham, Manchester Book through budgetairportparking.co.uk&
-                        save £££s</p>
-                </article>
-            </div>
-
 
             <div class="col-5">
                 <div class="myimage">
@@ -111,15 +114,18 @@
             </div>
 
 
-
+        <div class="col-7">
+            <article>
+                <p>Best Airport parking prices at all Major UK Airports.
+                    including Heathrow, Gatwick, Luton, Stansted, Birmingham, Manchester Book through budgetairportparking.co.uk&
+                    save £££s</p>
+            </article>
+        </div>
 
 
     </div>
   </div>
 </div>
-
-
-
 
 <footer class="footer">
 
