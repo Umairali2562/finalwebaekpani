@@ -1,4 +1,13 @@
 /*##################### defaults ##########################*/
+*{
+    font-family:Serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 nav,
 header,
 footer{
@@ -11,7 +20,7 @@ body{
 
 }
 
-label{
+label.mybiglabel{
     font-size: 35px;
     font-weight: bold;
 }
@@ -30,6 +39,7 @@ font-size: 35px;
     margin: auto;
     padding-top: 4%;
     padding-bottom: 4%;
+
 }
 
 .row{
@@ -37,7 +47,9 @@ font-size: 35px;
     display: flex;
     flex-wrap: wrap; /*wrap all content in this container around underneeth*/
     align-items:center;
+
 }
+
 
 .row::after{
     display: table;
@@ -78,6 +90,12 @@ h1.section2Header{
 }
 
 
+
+
+
+
+
+
 form h2{
     color:#FFF;
 }
@@ -88,15 +106,107 @@ font-size: 20px;
     padding: 5px;
 }
 
-/*##################### Banner ##########################*/
+/*##################### Banner and slidr ##########################*/
 
-div.banner{
+.head{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("image2.jpg");
-    background-size: cover;
-    background-position: center;
+    position: relative;
+   overflow: hidden;
 }
+.slider{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+}
+
+#slideimg{
+    width: 100%;
+    height: 100%;
+    animation: zoom 3s linear infinite;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1.3);
+    }
+
+    15%{
+        transform: scale(1);
+    }
+
+    85%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: absolute;
+    top:0;
+
+}
+
+.content {
+
+  margin-top: 160px;
+
+    padding-top:20px;
+    text-align: center;
+    color:#fff;
+}
+
+
+
+
+
+.content h1{
+font-size: 60px;
+}
+
+.content h3{
+width: 80%;
+    margin: 20px auto 100px;
+    font-weight:100;
+    line-height: 25px;
+}
+
+button.mybtn{
+
+    width: 200px;
+    padding:15px 0;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 25px;
+    background-color: transparent;
+    color:white;
+    font-weight: bold;
+    border: 2px solid darkorange;
+
+    cursor: pointer;
+    transition:background 0.5s;
+}
+
+
+
+
+button.mybtn:hover{
+    background: darkorange;
+    border:2px solid white;
+}
+
+
+anchorofbtn{
+    text-decoration: none;
+    list-style: none;
+}
+
 
 /*##################### Navbar ##########################*/
 
@@ -106,7 +216,7 @@ nav{
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     overflow: hidden;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.9);
 
 }
 
@@ -145,6 +255,87 @@ ul.topnav li a:hover{
 ul.topnav li.dropdownIcon{
     display: none;
 }
+/*for hiding navbar*/
+#navbar{
+    top: -50px;
+    transition: top 0.3s;
+}
+
+.scrolling-box{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+
+/*##################### for searching ##########################*/
+
+div.banner{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("image2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+div.borderofsearch{
+    border:1px solid white;
+    border-radius: 7px;
+}
+
+div.box-for-searching{
+
+    border-radius: 7px;
+    margin:24px;
+    padding:16px 24px 20px 24px;
+    text-align: center;
+    background-color: transparent;
+    border:1px solid white;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+    0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+.iconforsearch{
+width: 100%;
+}
+
+.search-btn{
+    font-size:32px;
+    font-weight: 700;
+    color:white;
+    background-color:darkorange;
+    padding:2px 40px;
+    display:block;
+    text-align: center;
+    margin:5px;
+  border-radius: 7px;
+    margin:auto;
+}
+
+
+label{
+
+    color: white;
+    font-family: 'proxima_novaregular';
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0px 0 1px;
+    padding: 0;
+    text-align: left;
+}
+
+
+
+.leftside-col-for-form{
+    margin: 20%;
+}
+
+
+
+input[type="text"]{
+    width: 110px;
+}
+
+
 
 
 /*##################### custom styles ##########################*/
@@ -167,7 +358,7 @@ background-color: #fff;
     0 2px 3px 0 rgba(0,0,0,.1);
 }
 div.myimage{
-    padding-left: 10px;
+    padding-right: 10px;
 }
 
 div.myimage img{
@@ -179,7 +370,7 @@ div.myimage img{
     2px 2px 17px 2px rgba(0,0,0,.1);
 }
 
-button{
+button.learnmore{
     font-size: 32px;
     font-weight: bolder;
     color:#fff;
@@ -367,20 +558,36 @@ ul li{
        display: block;
         text-align: center;
     }
+    ul.topnav li a {
+    float:none;
+    }
 
     h1.section2Header{
         font-size:55px;
     }
+
+
+
+
     article p{
         font-size:25px;
     }
 
+
     .col-7,
     .col-6,
     .col-5,
-    .col-4{
+    .col-4,
+    .col-3,
+    .col-2{
         width: 100%;
         margin: 0;
+    }
+
+
+    div.box-for-searching{
+        padding: 25px;
+        display: block;
     }
 
     div.mobilestack{
@@ -406,9 +613,7 @@ ul li{
         margin: 15px;
     }
 
-    input[type="text"]{
-    width: 350px;
-    }
+
 
     .videocontainer iframe{
         position: relative;
@@ -416,4 +621,20 @@ ul li{
         margin: 0;
         overflow: hidden;
     }
+
+    .content h1 {
+        font-size: 38px;
+    }
+
+    button.mybtn {
+        margin: 0;
+    }
+    .content{
+        overflow: hidden;
+        margin: 0;
+        margin-left: 58px;
+        width: 75%;
+        margin-top: 34px;
+    }
+
 }
